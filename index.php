@@ -101,21 +101,21 @@
         }
 
         function updatePaymentStatus(data) {
-            if (data.status === 'SUCCESS') {
+            if (data.status === 'Success') {
                 // Hide the STK push initiation notification
                 notification.classList.add('fade-out');
                 triggerConfetti(); // Trigger confetti animation
             }
 
             const statusHtml = `
-        <h3 class="font-bold ${data.status === 'SUCCESS' ? 'text-green-700' : 'text-red-700'}">${data.status}</h3>
+        <h3 class="font-bold ${data.status === 'Success' ? 'text-green-700' : 'text-red-700'}">${data.status}</h3>
         <p>Amount: ${data.amount}</p>
         <p>Receipt Number: ${data.mpesa_receipt_number}</p>
         <p>Phone: ${data.phone_number}</p>
         <p>Result: ${data.result_desc}</p>
     `;
             paymentStatus.innerHTML = statusHtml;
-            paymentStatus.className = `mt-4 p-4 rounded-lg ${data.status === 'SUCCESS' ? 'bg-green-100' : 'bg-red-100'}`;
+            paymentStatus.className = `mt-4 p-4 rounded-lg ${data.status === 'Success' ? 'bg-green-100' : 'bg-red-100'}`;
             paymentStatus.classList.add('fade-in');
             paymentStatus.classList.remove('hidden');
         }
