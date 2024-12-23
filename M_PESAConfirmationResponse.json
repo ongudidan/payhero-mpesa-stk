@@ -1,0 +1,16 @@
+{
+    "status": true,
+    "response": {
+            "MerchantRequestID": "6a86-453e-a95a-82e262aff71843182276",
+            "CheckoutRequestID": "ws_CO_23122024070219367768540720",
+            "ResultCode": 0,
+            "Amount": 1,
+            "MpesaReceiptNumber": "SLN0HTXG3M",
+            "Phone": "0768540720",
+            "ExternalReference": "INV-1734926538",
+            "Status": "Success",
+            "ResultDesc": "The service request is processed successfully.",
+            "ServiceWalletBalance": 0,
+            "PaymentWalletBalance": 0
+    }
+}
